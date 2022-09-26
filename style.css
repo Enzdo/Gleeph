@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@media only screen and (max-width: 680px){
+  html{
+      background: url('614afc7136d8120335b1dc41_bg-1-features-app-x-template-p-2000.jpeg');
+      background-position: center;
+      background-position-y:0 ;
+      background-size: auto;
+      z-index: -2;
+      font-family: 'Roboto';
+      
+  }
+  .blur  {
+    position: absolute;
+    filter: blur(5px);
+    left: 35px;
+    top: 144px;
+    z-index: -1;
+  }
+  .blur2{
+    position: absolute;
+    filter: blur(5px);
+    left: 201px;
+    top: 256px;
+    z-index: -1;
+  }
+  .blur3{
+    position: absolute;
+    filter: blur(5px);
+    left: 55px;
+    top: 455px;
+    z-index: -1;
+  }
+  
+  main{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #37006A;
+  }
+  img{
+    width: 175px;
+    height: 140px;
+  }
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .slider-texte {
+    position: relative;
+    width: 55%;
+    height: 150px;
+    margin-top: 5vh;
+  }
+  
+  .slider-texte > p {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    animation: display 10s infinite;
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  p:nth-child(2) {
+    animation-delay: 2s;
+  }
+  p:nth-child(3) {
+    animation-delay: 4s;
+  }
+  p:nth-child(4) {
+    animation-delay: 6s;
+  }
+  p:nth-child(5) {
+    animation-delay: 8s;
+  }
+  .crée {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 40px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #1b1b1b;
+  }
+  .titre p{
+    font-size: 26px;
+  }
+}
