@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @media only screen and (max-width: 680px){
   html{
-      background: url('614afc7136d8120335b1dc41_bg-1-features-app-x-template-p-2000.jpeg');
+      background: url('img/614afc7136d8120335b1dc41_bg-1-features-app-x-template-p-2000.jpeg');
       background-position: center;
       background-position-y:0 ;
       background-size: auto;
@@ -12,22 +12,22 @@
   .blur  {
     position: absolute;
     filter: blur(5px);
-    left: 35px;
-    top: 144px;
+    left: 15%;
+    top: 20%;
     z-index: -1;
   }
   .blur2{
     position: absolute;
     filter: blur(5px);
-    left: 201px;
-    top: 256px;
+    left: 55%;
+    top: 35%;
     z-index: -1;
   }
   .blur3{
     position: absolute;
     filter: blur(5px);
-    left: 55px;
-    top: 455px;
+    left: 10%;
+    top: 65%;
     z-index: -1;
   }
   
@@ -35,14 +35,15 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 10%;
     font-family: Arial, Helvetica, sans-serif;
     color: #37006A;
   }
-  img{
-    width: 175px;
-    height: 140px;
+  main img{
+    width: 50%;
+    height: 50%;
   }
   .pic-ctn {
     width: 100vw;
@@ -88,6 +89,7 @@
     text-align: center;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
   }
   
   p:nth-child(2) {
@@ -103,17 +105,51 @@
     animation-delay: 8s;
   }
   .crée {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px );
-    border-radius: 40px;
+    border-radius: 30px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding-left: 10%;
     padding-right: 10%;
-    color: #1b1b1b;
+    color: #0c0c0c;
+    font-weight: 500;
+  }
+  .login {
+    font-weight: 600;
   }
   .titre p{
     font-size: 26px;
+    font-weight: 500;
+    font-style: italic;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form input{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 7%;
+  }
+  .submit{
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 10%;
+  }
+  .popupForm{
+    display: none;
   }
 }

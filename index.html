@@ -42,14 +42,31 @@
 </div>
 <body>
     <main>
-        <div><img src="gleeph.png" alt=""></div>
+        <img src="img/gleeph.png" alt="">
         <div class="titre"><p>L'écris nous lis</p></div>
         <div class="slider-texte"><p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis veritatis vel quidem nobis</p>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis veritatis vel quidem nobis</p>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis veritatis vel quidem nobis</p>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis veritatis vel quidem nobis</p></div>
-        <div class="crée"><p>Crée un compte</p></div>
+        <div class="crée">
+          <bouton onclick="openForm()"><p>Crée un compte</p></bouton>
+          <div class="popupForm" id="popupForm"><form action="">
+              <input type="text" id="fname" name="fname" value="Pseudo:"><br>
+              <input type="text" id="lname" name="lname" value="Prénom:"><br>
+              <input type="text" id="fname" name="fname" value="Nom:"><br>
+              <input type="text" id="fname" name="fname" value="Email:"><br>
+              <input type="text" id="fname" name="fname" value="Mot de passe:"><br>
+              <input type="submit" class="submit"value="Submit">
+            </form>
+          </div>
+        </div>
         <div class="login"><p>Login</p></div>
     </main>
+    <script>
+      function openForm() {
+  document.getElementById("popupForm").style.display = "block";
+}
+
+    </script>
 </body>
 </html>
